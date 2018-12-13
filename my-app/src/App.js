@@ -8,7 +8,7 @@ class App extends Component {
   render() {
     return (
       <div>
-      <Game question={this.props.questions[this.props.currentQuestion]}
+      <Game question={this.props.questions[this.props.currentQuestion ]}
         onQuestionAnswer={(answer)=>{
           this.props.dispatch(questionAnswer(this.props.currentQuestion, answer))
         }} />
