@@ -17,9 +17,7 @@ export default class Game extends React.Component {
         <div id = "respuesta">
             <Respuesta respuesta={this.props.question.userAnswer}/>
         </div>
-      <input type="text" value={this.props.question.userAnswer || ''} onChange={(e)=>{
-       this.props.onQuestionAnswer(e.target.value);
-          }}/>
+              
           <Actionbar/>
       </body>
 
